@@ -37,7 +37,6 @@ console.log(campoPesquisa);
 
 if (!resultados) {
   resultados = "Nada foi encontrado"
-  return
 }
 section.innerHTML = resultados
 }
