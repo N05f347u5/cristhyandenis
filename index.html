@@ -4,27 +4,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <title>Regimes Tributários</title>
+    <title>Perfil</title>
 </head>
-
 <body>
     <header>
-        <h1>Regimes de Empresas Brasileiras</h1>
+        <h1>Cristhyan Denis Cardoso Gasperini</h1>
+        <p><a href="mailto:cristhyandenis@hotmail.com">cristhyandenis@hotmail.com</a></p>
+        <p>Monsenhor Paulo - MG</p>
+        <p id="age">25 anos</p>
     </header>
-    <main>
-        <Section>
-            <input type="text" placeholder="Digite o Tributo Aqui" id="campo-pesquisa">
-            <button onclick="pesquisar()">Pesquisar</button>
-        </Section>
-        <section class="resultados-pesquisa"
-            id= "resultados-pesquisa">
-        </section>
-    </main>
-<footer>
-    <p>2024 - Regimes Brasileiros. Todos os direitos reservados</p>
-    <p>Entre em contato pelo e-mail: cristhyandenis@regimesbrasil.com.br</p>
-</footer>
-<script src="dados.js"></script>
-<script src="app.js"></script>
+
+       <!-- Abas -->
+       <div class="tabs">
+        <div class="tab active" onclick="showTab('formacao')">Formação</div>
+        <div class="tab" onclick="showTab('experiencia')">Experiência Profissional</div>
+        <div class="tab" onclick="showTab('qualificacoes')">Qualificações</div>
+        <div class="tab" onclick="showTab('adinfo')">Informações Adicionais</div>
+    </div>
+
+    <!-- Conteúdo das abas -->
+    <div id="formacao" class="tab-content active">
+        <h2>Formação</h2>
+        <ul type="circle">
+            <li>Técnico em Mecânica Industrial, Instituto Federal do Sul de Minas Gerais – Campus Avançado Três Corações</li>
+            <li>Graduação em Processos Gerenciais, Universidade Estadual de Minas Gerais</li>
+            <li>MBA – Gestão Financeira e Controladoria, Centro Universitário do Sul de Minas (UNIS – Varginha)</li>
+         </ul>
+    </div>
+
+    <div id="experiencia" class="tab-content">
+        <h2>Experiência Profissional</h2>
+        <ul type="circle">
+            <li>
+                <h3>2017-2019 – MGM Produtos Siderúrgicos S/A.</h3>
+                <p>Cargo: Preparador de Material l</p>
+                <p>Principais atividades: Preparar e organizar portas e batentes</p>
+            </li>
+            <li>
+                <h3>2021 - Autônomo </h3>
+                <p>Cargo: Digitador Independente</p>
+                <p>Principais atividades: Preparação de documentação, medição e avaliação de terrenos e imóveis para atualização de cadastro imobiliário.</p>
+            </li>
+            <li>
+                <h3>2022 - Madosão Supermercado Ltda.</h3>
+                <p>Cargo: Repositor de Mercadorias</p>
+                <p>Principais atividades: Reposição de Produtos e organização de estoque.</p>
+            </li>
+            <li>
+                <h3>2022 - Atualmente – KeK Contabilidade Ltda.</h3>
+                <p>Cargo: Auxiliar Financeiro</p>
+                <p>Principais atividades: Gestão de Contas à Pagar e Receber, Análise de Fluxo de Caixa, Gestão de Faturamento, Emissão de Notas Fiscais, Boletos e demais procedimentos do departamento.</p>
+            </li>            
+        </ul>
+    </div>
+
+    <div id="qualificacoes" class="tab-content">
+        <h2>Qualificações e Atividades Profissionais</h2>
+        <ul type="circle">
+            <li>Curso de Atualização em Assistente Administrativo, Prime Cursos do Brasil</li>
+            <li>Curso de Atualização em Fundamentos de Administração Financeira, Fundação Getúlio Vargas (FGV)</li>
+            <li>Curso de Atualização em Fundamentos Finanças, Fundação Getúlio Vargas (FGV)</li>
+            <li>Informática Intermediário</li>
+            <li>Experiência com pacotes Office</li>
+            <li>Experiência com Domínio Sistemas</li>
+        </ul>
+    </div>
+
+    <div id="adinfo" class="tab-content">
+        <h2>Informações Adicionais</h2>
+        <ul type="circle">
+            <li>Registro no CRA-MG 06-004813/D</li>
+            <li>CNH (B)</li>
+        </ul>
+    </div>
+
+    <script src="app.js"></script>
+    <footer>
+        <h2>Informações de Contato</h2>
+        <p>E-mail: &#x1F517<a href="mailto:cristhyandenis@hotmail.com">cristhyandenis@hotmail.com</a></p>
+        <p>WhatsApp: &#x1F517<a href="https://api.whatsapp.com/send/?phone=%2B553591095323&text&type=phone_number&app_absent=0" target="_blank">(35) 9 9109-5323</a></p>
+    </footer>
 </body>
 </html>

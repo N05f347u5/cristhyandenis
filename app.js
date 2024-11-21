@@ -1,43 +1,29 @@
-function pesquisar() {
+    // Obtém o ano atual
+    const currentYear = new Date().getFullYear();
+    
+    // Define o ano de nascimento (substitua por seu ano de nascimento)
+    const birthYear = 1999;
+    
+    // Calcula a idade
+    const age = currentYear - birthYear;
+    
+    // Atualiza o elemento HTML com a idade calculada
+    document.getElementById("age").textContent = age + " anos";
 
-  let section = document.getElementById("resultados-pesquisa");
+    // Script JavaScript para alternar entre as abas
 
-  let campoPesquisa = document.getElementById("campo-pesquisa").value;
+        function showTab(tabId) {
+            // Esconde todo o conteúdo
+            const contents = document.querySelectorAll('.tab-content');
+            contents.forEach(content => content.classList.remove('active'));
 
-  if (!campoPesquisa) {
-    section.innerHTML = "Nada foi encontrado"
-    return
-  };
-  campoPesquisa = campoPesquisa.toLowerCase();
+            // Remove a classe 'active' de todas as abas
+            const tabs = document.querySelectorAll('.tab');
+            tabs.forEach(tab => tab.classList.remove('active'));
 
-console.log(campoPesquisa);
+            // Exibe o conteúdo da aba selecionada
+            document.getElementById(tabId).classList.add('active');
 
-  let resultados = "";
-  let titulo = "";
-  let descricao = "";
-  let tags =  ""
-
-  for (let dado of dados) {
-    titulo = dado.titulo.toLowerCase();
-    descricao = dado.descricao.toLowerCase();
-    tags = dado.tags.toLowerCase()
-    if (titulo.includes(campoPesquisa) || descricao.includes(campoPesquisa) || tags.includes(campoPesquisa)) {
-    console.log(dado.titulo.includes(campoPesquisa))
-  
-  resultados += `
-    <div class="item-resultado">
-  <h2>
-      <a href="#" target="_blank">${dado.titulo}</a>
-      </h2><p class="descricao-meta">${dado.descricao}.
-      </p><a href= ${dado.link} target="_blank">Mais informações</a></>
-</div>
-`
-  };
-}
-
-if (!resultados) {
-  resultados = "Nada foi encontrado"
-}
-section.innerHTML = resultados
-}
-
+            // Adiciona a classe 'active' à aba clicada
+            event.currentTarget.classList.add('active');
+        }
