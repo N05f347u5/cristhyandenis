@@ -16,6 +16,7 @@ html {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    width: 650px;
     
 }
 header{
@@ -38,8 +39,11 @@ header > div.intro {
     margin-left: 10px;
     
 }
+header > div#foto{
+    width: 200px;
+}
 header > div.intro img {
-    width: 160px;
+    width: 180px;
     height: 100%;
     border-radius: 50%;
     overflow: hidden;
