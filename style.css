@@ -34,6 +34,7 @@ header > div.intro {
     width: 400px;
     height: 100%;
     margin-right: 5px;
+    margin-left: 10px;
 }
 header > div.intro img {
     width: 160px;
@@ -43,7 +44,7 @@ header > div.intro img {
     border: 3px solid white;
     align-items: center;
     object-fit: cover;
-    display: flexbox;
+    
 }
 footer {
     text-align: center;
