@@ -8,15 +8,14 @@
     min-height: 100vh;
     flex: 1;
     background-color: rgba(199, 193, 193, 0.729);
-    width: 650px;
-    
-}
-html {
     /* background-image: url(imagens/pexels-goumbik-669610.jpg);  */
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    width: 650px;
+   
+}
+.pdf {
+    height: 20px;
     
 }
 header{
@@ -42,7 +41,7 @@ header > div.intro {
 header > div#foto{
     width: 200px;
 }
-header > div.intro img {
+header > div.intro img.foto{
     width: 180px;
     height: 100%;
     border-radius: 50%;
@@ -57,8 +56,6 @@ footer {
     /*background-image: linear-gradient(360deg, #27479e70, 40%, #FFFFFF);*/
     font-weight: bold;
     font-size: 10.3px;
-    padding: 1em;
-    
 } 
 #linkca{
     color: white;
@@ -97,5 +94,5 @@ a {
 }
 
 .tab-content.active {
-    display: block;
+    display: inline-table;
 }

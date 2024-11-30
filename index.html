@@ -9,10 +9,10 @@
 <body>
     <header>
         <div id="foto" class="intro">
-            <img src="imagens/393784024_3587261804892017_1398004732611819213_n.jpg" height="200em" alt="" srcset="">
+            <img src="imagens/393784024_3587261804892017_1398004732611819213_n.jpg" height="200em" alt="" srcset="" class="foto">
         </div>
         <div class="intro">
-            <h1>Cristhyan Denis Cardoso Gasperini</h1>
+            <h1>Cristhyan Denis Cardoso Gasperini <a href="imagens/Curriculo.pdf" target="_blank"><img src="imagens/pdf.png" alt="Download PDF" class="pdf"></a></h1>
             <p><a href="mailto:cristhyandenis@hotmail.com" id="linkca">cristhyandenis@hotmail.com</a></p>
             <p>Monsenhor Paulo - MG</p>
             <p id="age">25 anos</p>
@@ -20,12 +20,12 @@
     </header>
 
        <!-- Abas -->
-       <div class="tabs">
-        <div class="tab active" onclick="showTab('formacao')">Formação</div>
-        <div class="tab" onclick="showTab('experiencia')">Experiência Profissional</div>
-        <div class="tab" onclick="showTab('qualificacoes')">Qualificações</div>
-        <div class="tab" onclick="showTab('adinfo')">Informações Adicionais</div>
-    </div>
+    <nav class="tabs">
+        <p class="tab active" onclick="showTab('formacao')">Formação</p>
+        <p class="tab" onclick="showTab('experiencia')">Experiência Profissional</p>
+        <p class="tab" onclick="showTab('qualificacoes')">Qualificações</p>
+        <p class="tab" onclick="showTab('adinfo')">Informações Adicionais</p>
+    </nav>
 
     <!-- Conteúdo das abas -->
     <div id="formacao" class="tab-content active">
@@ -85,9 +85,11 @@
 
     <script src="app.js"></script>
     <footer>
-        <h2>Informações de Contato</h2>
-        <p>E-mail: &#x1F517<a href="mailto:cristhyandenis@hotmail.com">cristhyandenis@hotmail.com</a></p>
-        <p>WhatsApp: &#x1F517<a href="https://api.whatsapp.com/send/?phone=%2B553591095323&text&type=phone_number&app_absent=0" target="_blank">(35) 9 9109-5323</a></p>
+        <h2>Contato</h2>
+            <nav>
+                <a href="mailto:cristhyandenis@hotmail.com"><img src="imagens/marketing-de-email.png" height="20px" alt="e-mail" style="margin-right: 8px;"></a>
+                <a href="https://api.whatsapp.com/send/?phone=%2B553591095323&text&type=phone_number&app_absent=0" target="_blank"><img src="imagens/whatsapp.png" height="20px" alt="Whatsapp" style="margin-right: 0px;"></a>
+            </nav>
     </footer>
 </body>
 </html>
