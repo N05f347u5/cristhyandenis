@@ -53,9 +53,12 @@ header > div.intro img.foto{
 }
 footer {
     text-align: center;
-    /*background-image: linear-gradient(360deg, #27479e70, 40%, #FFFFFF);*/
+    background-color: rgba(83, 83, 83, 0.514);
     font-weight: bold;
     font-size: 10.3px;
+    margin: 0%;
+    padding: 1em;
+    border-radius: 2ic;
 } 
 #linkca{
     color: white;
