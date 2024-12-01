@@ -1,4 +1,3 @@
-import { Analytics } from "@vercel/analytics/react"    
     // Obtém o ano atual
     const currentYear = new Date().getFullYear();
     
